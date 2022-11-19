@@ -33,7 +33,7 @@ def get_birthday():
   return (next - today).days
 
 def get_words():
-  words = requests.get("https://api.shadiao.pro/chp")
+  words = requests.get("https://api.iculture.cc/api/yiyan")
   if words.status_code != 200:
     return get_words()
   return words.json()['data']['text']
